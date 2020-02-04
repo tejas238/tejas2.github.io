@@ -51,7 +51,7 @@ h1 {
     top: 25px;
 }
 
-#aboutme, #contact, #links {
+#aboutme, #contact, #links, #projects {
     box-sizing: border-box;
     border-style: solid;
     border-width: 2px;
@@ -104,6 +104,14 @@ h1 {
     background: transparent;
   }
 
+#projects{
+    position: relative;
+    top: 40px;
+    height: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
 #dropline, #lines {
     text-align: center;
     position: absolute;
@@ -136,13 +144,17 @@ h1 {
     stroke-width: 5px;
 }
 
-#lines #aboutmepath {
+#lines path {
     stroke: black;
     stroke-width: 2;
     fill: transparent;
-    stroke-dasharray: 355;
-    stroke-dashoffset: 360;
+    stroke-dasharray: 370;
+    stroke-dashoffset: 370;
     stroke-linejoin: round;
+}
+
+.animatelinemove {
+    animation: linemove 2s;
 }
 
 
@@ -237,6 +249,15 @@ h1 {
         100%{
           position: relative;
           top: 10px;
+        }
+    }
+
+    @keyframes linemove {
+        0% {
+            stroke-dashoffset: 370;
+        }
+        100% {
+            stroke-dashoffset: -370;
         }
     }
 
