@@ -10,4 +10,8 @@ window.onload = function() {
     document.getElementById("linkscircle").onclick = function() {
             document.getElementById("linkspath").classList.add("animatelinemove");
     }
+
+    document.getElementById("projectscircle").onclick = function() {
+        document.getElementById("projectspath").classList.add("animatelinemove");
+}
 }

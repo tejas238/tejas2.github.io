@@ -138,6 +138,7 @@ h1 {
     stroke: black;
     fill-opacity: 0;
     stroke-width: 2px;
+    animation: moveup ease 4.1s 1;
 }
 
 #lines circle:hover{
@@ -148,13 +149,13 @@ h1 {
     stroke: black;
     stroke-width: 2;
     fill: transparent;
-    stroke-dasharray: 370;
-    stroke-dashoffset: 370;
+    stroke-dasharray: 560;
+    stroke-dashoffset: 560;
     stroke-linejoin: round;
 }
 
 .animatelinemove {
-    animation: linemove 2s;
+    animation: linemove 3s;
 }
 
 
@@ -254,10 +255,10 @@ h1 {
 
     @keyframes linemove {
         0% {
-            stroke-dashoffset: 370;
+            stroke-dashoffset: 560;
         }
         100% {
-            stroke-dashoffset: -370;
+            stroke-dashoffset: -560;
         }
     }
 
