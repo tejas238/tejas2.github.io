@@ -12,10 +12,13 @@
     font-style: normal;
 }
 
-h1 {
+body {
     font-family: 'ss-font', serif;
     font-weight:normal;
     font-style:normal;
+}
+
+h1 {
     color: black;
     font-size: 150px;
     text-align: center;
@@ -52,7 +55,6 @@ h1 a {
 
 
 #aboutme h2, #links h2, #contact h2, #projects h2 {
-    font-family: 'ss-font', serif;
     display: inline-block;
     position: relative;
     top: -10px;
@@ -155,6 +157,7 @@ h1 a {
     height: 100%;
     padding-left: 20%;
     padding-right: 20%;
+    text-align: center;
 }
 
 #dropline, #lines {
@@ -218,6 +221,27 @@ h1 a {
     stroke-width: 4;
     stroke-linecap: round;
 }
+
+.column {
+    float: left;
+    width: 30%;
+    padding: 0 10px;
+  }
+
+  .row {margin: 0 -5px;}
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f2f2f2;
+  }
 
   @keyframes linedown {
       0%{
