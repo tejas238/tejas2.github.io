@@ -5,6 +5,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'sscr-font';
+    src: url('silversouthscript-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 h1 {
     font-family: 'ss-font', serif;
     font-weight:normal;
@@ -14,6 +21,11 @@ h1 {
     text-align: center;
     margin-bottom: 10px;
     margin-top: 10px
+}
+
+h1 a {
+    text-decoration: none;
+    color: black;
 }
 
 #main {
@@ -38,11 +50,38 @@ h1 {
     height: 262.5px;
 }
 
+
+#aboutme h2, #links h2, #contact h2, #projects h2 {
+    font-family: 'ss-font', serif;
+    display: inline-block;
+    position: relative;
+    top: -10px;
+    left: 40px;
+    margin-bottom: 0;
+}
+
+#aboutme h2 {
+    top: -10px;
+}
+
+#aboutme p {
+    text-align: justify;
+    font-family: 'ss-font', serif;
+    font-size: 14px;
+    margin: 7 7 7 7;
+}
+
+#aboutme p::first-letter {
+    font-size: x-large;
+}
+
 #contact {
     float: right;
     height: 550px;
     position: relative;
     right: 10%;
+    text-align: left;
+    z-index: 2;
 }
 
 #links {
@@ -51,11 +90,16 @@ h1 {
     top: 25px;
 }
 
+#links a {
+    display: block;
+    position: relative;
+    z-index: 2;
+    left: 40px;
+    font-size: larger;
+}
+
 #aboutme, #contact, #links, #projects {
     box-sizing: border-box;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 20px;
     visibility: hidden;
 }
 
@@ -137,7 +181,7 @@ h1 {
 
 #lines circle {
     stroke: black;
-    fill-opacity: 0;
+    fill: white;
     stroke-width: 2px;
     animation: moveup ease 4.1s 1;
 }
@@ -262,6 +306,4 @@ h1 {
             stroke-dashoffset: -560;
         }
     }
-
-}
 
